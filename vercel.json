@@ -2,9 +2,9 @@
     "version":2,
     "name":"taco-recipes",
     "builds":[
-        {"src":"5.2 JSON/index.js","use":"@vercel/node"}
+        {"src":"/src/index.js","use":"@vercel/node"}
     ],
     "routes":[
-        {"src":"/.*","dest":"/src/app.js"}
+        {"src":"/.*","dest":"/src/index.js"}
     ]
 }
