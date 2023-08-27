@@ -1,8 +1,8 @@
 {
     "version":2,
-    "name":"weather-app",
+    "name":"taco-recipes",
     "builds":[
-        {"src":"src/app.js","use":"@vercel/node"}
+        {"src":"index.js","use":"@vercel/node"}
     ],
     "routes":[
         {"src":"/.*","dest":"/src/app.js"}
