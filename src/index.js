@@ -2,7 +2,7 @@ import express from "express";
 import bodyParser from "body-parser";
 
 const app = express();
-const port = process.env.PORT||3000;
+const PORT = process.env.PORT||3000;
 
 //Step 1: Run the solution.js file without looking at the code.
 //Step 2: You can go to the recipe.json file to see the full structure of the recipeJSON below.
@@ -34,6 +34,6 @@ app.post("/recipe", (req, res) => {
   res.redirect("/");
 });
 
-app.listen(port, () => {
-  console.log(`Server running on port: ${port}`);
+app.listen(PORT, () => {
+  console.log(`Server running on port: ${PORT}`);
 });
