@@ -12,7 +12,7 @@ const PORT = process.env.PORT||3000;
 
 
 //public static path
-
+app.set("view engine", "ejs"); 
 app.set("views",viewsPath);
 
 app.use(express.static(staticPath));
