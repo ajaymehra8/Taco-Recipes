@@ -6,14 +6,14 @@ const bodyParser=require("body-parser");
 const app=express();
 
 const staticPath=path.join(__dirname,"../public");
-const viewsPath=path.join(__dirname,"../templates/views");
-const partialsPath=path.join(__dirname,"../templates/partials");
+const viewsPath=path.join(__dirname,"../views");
 
 const PORT = process.env.PORT||3000;
 
 
 //public static path
 
+app.set("views",viewsPath);
 
 app.use(express.static(staticPath));
 
